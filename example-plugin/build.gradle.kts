@@ -1,5 +1,5 @@
 dependencies {
-    implementation(project(":AnnoyingAPI", configuration = "shadow"))
+    implementation(project(":api", configuration = "shadow"))
 }
 
 // Relocate the AnnoyingAPI package
