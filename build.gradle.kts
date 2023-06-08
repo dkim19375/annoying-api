@@ -2,6 +2,9 @@ plugins {
     java
 }
 
+group = "io.github.dkim19375"
+version = "3.0.1"
+
 subprojects {
     version = "3.0.1"
     group = "io.github.dkim19375"
