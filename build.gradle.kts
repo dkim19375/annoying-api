@@ -1,5 +1,6 @@
 plugins {
     java
+    `maven-publish`
 }
 
 group = "io.github.dkim19375"
@@ -10,6 +11,7 @@ subprojects {
     group = "io.github.dkim19375"
 
     apply(plugin = "java")
+    apply(plugin = "maven-publish")
 
     repositories {
         mavenCentral() // org.spigotmc:spigot, net.md-5:bungeecord-api (api)
