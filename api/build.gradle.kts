@@ -1,7 +1,3 @@
-plugins {
-    `java-library`
-}
-
 dependencies {
     compileOnlyApi("org.jetbrains", "annotations", "24.0.0")
     api("org.bstats", "bstats-bukkit", "3.0.0")
@@ -13,4 +9,16 @@ dependencies {
 // Javadoc JAR task
 java {
     withJavadocJar()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.dkim19375.annoying-api"
+            artifactId = "api"
+            version = project.version.toString()
+
+            from(components["java"])
+        }
+    }
 }

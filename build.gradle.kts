@@ -1,16 +1,16 @@
 plugins {
-    java
+    `java-library`
     `maven-publish`
 }
 
 group = "io.github.dkim19375"
-version = "3.0.1"
+version = "3.0.2-SNAPSHOT"
 
 subprojects {
-    version = "3.0.1"
+    version = "3.0.2-SNAPSHOT"
     group = "io.github.dkim19375"
 
-    apply(plugin = "java")
+    apply(plugin = "java-library")
     apply(plugin = "maven-publish")
 
     repositories {
@@ -36,6 +36,18 @@ subprojects {
         // Text encoding
         compileJava {
             options.encoding = "UTF-8"
+        }
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.dkim19375"
+            artifactId = "annoying-api"
+            version = project.version.toString()
+
+            from(components["java"])
         }
     }
 }

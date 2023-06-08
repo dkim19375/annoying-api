@@ -1,3 +1,2 @@
-include(":api", ":example-plugin")
-
 rootProject.name = "annoying-api"
+include(":api", ":example-plugin")
