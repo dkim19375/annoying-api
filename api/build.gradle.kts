@@ -24,7 +24,7 @@ java {
 configure<PublishingExtension> {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.dkim19375.api"
+            groupId = "com.github.dkim19375.annoyingapi"
             artifact(tasks["shadowJar"])
             artifact(tasks["javadocJar"])
         }
