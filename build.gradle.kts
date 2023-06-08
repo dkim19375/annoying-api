@@ -47,7 +47,7 @@ publishing {
             artifactId = "annoying-api"
             version = project.version.toString()
 
-            from(components["java"])
+            from(project(":api").components["java"])
         }
     }
 }
