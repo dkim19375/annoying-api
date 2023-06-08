@@ -1,1 +1,1 @@
-include("api", "example-plugin")
+include(":api", ":example-plugin")
