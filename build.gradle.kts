@@ -4,7 +4,7 @@ plugins {
 
 subprojects {
     version = "3.0.1"
-    group = "xyz.srnyx"
+    group = "io.github.dkim19375"
 
     apply(plugin = "java")
 
